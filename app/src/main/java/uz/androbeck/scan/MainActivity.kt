@@ -147,8 +147,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onTextFound(sb: String) {
-        println("::scan -> onTextFound")
-        a
+        println("::scan -> onTextFound abc")
         Log.d("AAAAAAA", sb)
         try {
             val passportPan = Regex(PASSPORT_TD_3_LINE_2_REGEX).find(sb)?.value
