@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url "https://maven.google.com" }
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url "https://maven.sumsub.com/repository/maven-public/" }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven { url "https://maven.google.com" }
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url "https://maven.sumsub.com/repository/maven-public/" }
+        mavenCentral()
+    }
+}
+rootProject.name = "Scan"
+include ':app'
